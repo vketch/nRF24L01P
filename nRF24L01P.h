@@ -326,6 +326,9 @@ public:
     void flushRx(void);
     void flushTx(void);
     uint8_t getRSSI(void);
+
+    InterruptIn& getIRQ(void) {return nIRQ_;} 
+
 private:
 
     /**
